@@ -1,0 +1,27 @@
+diff -urP bmtools-0.7.orig/lib.c bmtools-0.7/lib.c
+--- bmtools-0.7.orig/lib.c	Sun Apr  6 04:55:01 2003
++++ bmtools-0.7/lib.c	Sun Apr  6 04:55:23 2003
+@@ -104,6 +104,8 @@
+ 	unsigned char quotemode = 0;
+ 	
+ 	int n = 0;
++
++	unsigned char c;
+ 	
+ //	printf("New explode.\n");
+ 	
+@@ -157,7 +159,6 @@
+ 				if(start[marker] == '\\')
+ 				{
+ 					marker++;
+-					unsigned char c;
+ 					if(!start[marker]) break;
+ 					switch(start[marker])
+ 					{
+@@ -254,4 +255,4 @@
+ 	*ip = sin.s_addr;
+ 	return(h);
+ }
+-							    
+\ No newline at end of file
++							    
