@@ -1,8 +1,13 @@
+#
+# TODO:
+# - polish description, change group, wait for stable version 
+#   (maybe)
+# 
 Summary:	bmtools - Bandwidth Measurement Tools
 Summary(pl):	bmtools - Narzêdzia do ustawiania przepustowo¶ci ³±cza
 Name:		bmtools
 Version:	0.7
-Release:	0.1.experimential
+Release:	0.9.experimential
 License:	GPL
 Group:		Applications
 Source0:	http://s-tech.elsat.net.pl/bmtools/%{name}-%{version}-EXPERIMENTAL-UNSTABLE-UNTESTED-ETC.tar.gz
@@ -22,7 +27,7 @@ programs are completely command-line based.
 %description -l pl
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %{__make} CC="gcc %{rpmcflags}"
