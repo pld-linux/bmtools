@@ -1,7 +1,7 @@
 #
 # TODO:
 # - change group, wait for stable version (maybe)
-# 
+#
 Summary:	bmtools - Bandwidth Measurement Tools
 Summary(pl):	bmtools - Narzêdzia do mierzenia przepustowo¶ci ³±cza
 Name:		bmtools
