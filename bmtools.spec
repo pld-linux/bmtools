@@ -40,13 +40,14 @@ Oba programy s± w pe³ni oparte na linii poleceñ.
 %patch0 -p1
 
 %build
-%{__make} CC="%{__cc} %{rpmcflags}"
+%{__make} \
+CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install {bandabusers,rate,ratec,rated} $RPM_BUILD_ROOT%{_bindir}
+install bandabusers rate ratec rated $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
