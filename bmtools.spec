@@ -1,10 +1,9 @@
 #
 # TODO:
-# - polish description, change group, wait for stable version 
-#   (maybe)
+# - change group, wait for stable version (maybe)
 # 
 Summary:	bmtools - Bandwidth Measurement Tools
-Summary(pl):	bmtools - Narzêdzia do ustawiania przepustowo¶ci ³±cza
+Summary(pl):	bmtools - Narzêdzia do mierzenia przepustowo¶ci ³±cza
 Name:		bmtools
 Version:	0.7
 Release:	0.9.experimential
@@ -25,12 +24,20 @@ receiving and transmitting packets matching a given BPF filter. Both
 programs are completely command-line based.
 
 %description -l pl
+bmtools (Bandwidth Measurement Tools - narzêdzia do mierzenia
+przepustowo¶ci ³±cza) to para prostych narzêdzi do mierzenia ruchu,
+które mog± pomóc administratorowi sieci w patrzeniu, co siê dzieje z
+routerem dzia³aj±cym pod kontrol± Linuksa. Skrypt rate oblicza
+pasmo wykorzystane przez pakietu pasuj±ce do podanego filtra BPF na
+interfejsie. Skrypt bandabusers pokazuje dziesiêæ hostów odbieraj±cych
+i wysy³aj±cych najwiêcej pakietów pasuj±cych do podanego filtra BPF.
+Oba programy s± w pe³ni oparte na linii poleceñ.
 
 %prep
 %setup -q
 
 %build
-%{__make} CC="gcc %{rpmcflags}"
+%{__make} CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
