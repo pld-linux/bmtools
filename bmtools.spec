@@ -10,6 +10,7 @@ Release:	0.9.experimential
 License:	GPL
 Group:		Applications
 Source0:	http://s-tech.elsat.net.pl/bmtools/%{name}-%{version}-EXPERIMENTAL-UNSTABLE-UNTESTED-ETC.tar.gz
+# Source0-md5:	e53aac82dcb57a751102eeaf212ca8f5
 Patch0:		%{name}-gcc2.95.4.patch
 URL:		http://s-tech.elsat.net.pl/
 BuildRequires:	libpcap-devel
