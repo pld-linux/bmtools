@@ -41,7 +41,7 @@ Oba programy s± w pe³ni oparte na linii poleceñ.
 
 %build
 %{__make} \
-CC="%{__cc} %{rpmcflags}"
+	CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
