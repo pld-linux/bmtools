@@ -3,7 +3,7 @@
 # - change group, wait for stable version (maybe)
 #
 Summary:	bmtools - Bandwidth Measurement Tools
-Summary(pl.UTF-8):   bmtools - Narzędzia do mierzenia przepustowości łącza
+Summary(pl.UTF-8):	bmtools - Narzędzia do mierzenia przepustowości łącza
 Name:		bmtools
 Version:	0.7
 Release:	0.9.experimential
